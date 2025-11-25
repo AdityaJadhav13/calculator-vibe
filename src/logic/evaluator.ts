@@ -33,9 +33,9 @@ export function evaluateExpression(expression: string): EvaluationResult {
     // If percent is at the end and preceded by a number, treat as division by 100
     cleanExpr = cleanExpr.replace(/(\d+\.?\d*)%/g, '($1/100)');
 
-    // Validate expression has valid characters
-    if (!/^[\d+\-*/(). ]+$/.test(cleanExpr)) {
-      return { success: false, result: '0', error: 'Invalid characters' };
+    // Validate expression has valid characters (including ^ for exponentiation)
+    if (!/^[\d+\-*/(). ^]+$/.test(cleanExpr)) {
+      return { success: false, result: 'Error', error: 'Invalid characters' };
     }
 
     // Check for division by zero before evaluation

@@ -16,22 +16,23 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.calculatorvibe.app"
+      "bundleIdentifier": "com.adityajadhav13.calculatorvibe"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.calculatorvibe.app",
-      "permissions": []
+      "package": "com.adityajadhav13.calculatorvibe",
+      "permissions": [],
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "calculator-vibe-project"
+        "projectId": "97f85312-72ca-430b-b27a-0620c02795bc"
       }
     }
   }
